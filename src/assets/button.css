@@ -1,0 +1,17 @@
+
+
+#action-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    font-size: 26px;
+}
+
+.left-hand-button {
+    background-color: red;
+}
+
+.right-hand-button {
+    background-color: green;
+}

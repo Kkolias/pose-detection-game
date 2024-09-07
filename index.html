@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- add style button.css -->
+    <link rel="stylesheet" href="src/assets/button.css" />
+    <link rel="stylesheet" href="src/assets/main.css" />
+    <title>Sandbox</title>
+  </head>
+  <body>
+    <div id="stats"></div>
+    <div id="main">
+      <div class="container" style="position: relative">
+        <div class="canvas-wrapper" style="width: 900px; height: 95vh">
+          <div class="score-container">
+            <p class="score-text">Pisteet: <span id="score-number">0</span></p>
+            <p class="timer">Aikaa: <span id="time-left">30</span>s</p>
+          </div>
+          <div
+            class="final-score-container"
+            id="final-score"
+            style="display: none"
+          >
+            Pisteet: <span id="final-score-number"></span>
+          </div>
+          <div class="loading-indicator" id="loading-indicator">
+            käynnistetään...
+          </div>
+          <canvas
+            id="output"
+            style="
+              -webkit-transform: scaleX(-1);
+              transform: scaleX(-1);
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 900px;
+              height: 95vh;
+            "
+          ></canvas>
+          <video id="video" playsinline></video>
+        </div>
+        <div id="scatter-gl-container"></div>
+      </div>
+    </div>
+    <button id="start-button" style="position: absolute">Aloita!</button>
+    <button
+      id="action-button"
+      style="position: absolute; display: none"
+    ></button>
+
+    <div class="show-video-btn-container">
+      <label for="show-video-btn">Näytä kamera</label>
+      <input type="checkbox" name="show-video" id="show-video-btn" />
+    </div>
+  </body>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script> -->
+  <script type="module" src="src/index.js"></script>
+</html>

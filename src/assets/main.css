@@ -1,0 +1,62 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#video {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  display: none;
+  width: 900px;
+  height: 950px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.show-video-btn-container {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.canvas-wrapper {
+  border: 2px solid green;
+}
+
+.score-text,
+.timer {
+  text-align: center;
+  font-size: 20px;
+}
+
+.score-container {
+  position: relative;
+  z-index: 2;
+}
+
+.final-score-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: calc(900px / 2);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+#start-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  left: calc(900px / 2);
+  transform: translate(-50%, -50%);
+}
